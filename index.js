@@ -104,3 +104,53 @@ box6.addEventListener("mouseout", () => {
         y: 2
     });
 })
+
+
+const plan1 = document.querySelector(".plan1");
+const plan2 = document.querySelector(".plan2");
+const plan3 = document.querySelector(".plan3");
+
+plan1.addEventListener("mouseover", () => {
+    gsap.to(plan1, {
+        scale: 1.05,
+        duration: 0.2,
+        y: -2
+    });
+})
+plan1.addEventListener("mouseout", () => {
+    gsap.to(plan1, {
+        scale: 1,
+        duration: 0.2,
+        y: 2
+    });
+})
+
+plan2.addEventListener("mouseover", () => {
+    gsap.to(plan2, {
+        scale: 1.05,
+        duration: 0.2,
+        y: -2
+    });
+})
+plan2.addEventListener("mouseout", () => {
+    gsap.to(plan2, {
+        scale: 1,
+        duration: 0.2,
+        y: 2
+    });
+})
+
+plan3.addEventListener("mouseover", () => {
+    gsap.to(plan3, {
+        scale: 1.05,
+        duration: 0.2,
+        y: -2
+    });
+})
+plan3.addEventListener("mouseout", () => {
+    gsap.to(plan3, {
+        scale: 1,
+        duration: 0.2,
+        y: 2
+    });
+})
