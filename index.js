@@ -1,12 +1,5 @@
-// const link = document.querySelector("#link");
-// const offcanvasBody = document.querySelector("#offcanvasNavbar");
 
-// link.addEventListener("click", () => {
-//     if (window.innerWidth < 766) {
-//         offcanvasBody.style.display = "none";
-//     }
-// })
-
+// boxes animation
 const box1 = document.querySelector(".box1");
 const box2 = document.querySelector(".box2");
 const box3 = document.querySelector(".box3");
@@ -105,7 +98,7 @@ box6.addEventListener("mouseout", () => {
     });
 })
 
-
+// price card animation
 const plan1 = document.querySelector(".plan1");
 const plan2 = document.querySelector(".plan2");
 const plan3 = document.querySelector(".plan3");
@@ -154,3 +147,11 @@ plan3.addEventListener("mouseout", () => {
         y: 2
     });
 })
+
+// current year
+const year = document.querySelector("#year");
+
+const date = new Date();
+const years = date.getFullYear();
+
+year.textContent = years;
