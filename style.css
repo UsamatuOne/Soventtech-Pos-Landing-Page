@@ -1,0 +1,91 @@
+:root {
+    --bs-body-bg: #020617;
+
+    --bs-primary: #38BDF8;
+    --bs-success: #22D3EE;
+
+    --bs-body-color: #E5E7EB;
+    --bs-secondary-color: #94A3B8;
+
+    --bs-border-color: rgba(148, 163, 184, 0.2);
+}
+
+/* GLOBAL DARK BACKGROUND */
+body {
+    background: radial-gradient(800px circle at top right,
+            rgba(56, 189, 248, 0.12),
+            transparent 40%),
+        radial-gradient(600px circle at bottom left,
+            rgba(99, 102, 241, 0.12),
+            transparent 40%),
+        var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+/* GLASS CARDS */
+.card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--bs-border-color);
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* GRADIENT TEXT */
+.gradient-text {
+    background: linear-gradient(90deg, #38BDF8, #22D3EE);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* PRIMARY BUTTON */
+.btn-primary {
+    background: linear-gradient(135deg, #38BDF8, #2563EB);
+    border: none;
+    color: #020617;
+    font-weight: 600;
+    border-radius: 14px;
+    padding: 14px 30px;
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.45);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 45px rgba(56, 189, 248, 0.7);
+}
+
+/* ===== NAVBAR ===== */
+.offcanvas {
+    background: rgba(2, 6, 23, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.navbar {
+    background: rgba(2, 6, 23, 0.78);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.navbar-brand,
+.navbar-brand span {
+    color: #E5E7EB !important;
+}
+
+.navbar .nav-link {
+    color: #E5E7EB !important;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--bs-primary) !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(148, 163, 184, 0.3);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
