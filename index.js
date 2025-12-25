@@ -1,3 +1,162 @@
+gsap.registerPlugin(ScrollTrigger, SplitText);
+
+// hero text animations
+gsap.from(".f-text", {
+    y: -70,
+    opacity: 0,
+    stagger: 0.1,
+    duration: 2,
+    delay: 0.80,
+    ease: "power3.out"
+});
+
+gsap.from(".f-p", {
+    y: 70,
+    opacity: 0,
+    stagger: 0.1,
+    duration: 2,
+    delay: 0.90,
+    ease: "power3.out"
+});
+gsap.from(".f-b", {
+    y: 70,
+    opacity: 0,
+    stagger: 0.1,
+    duration: 2,
+    delay: 1.2,
+    ease: "power3.out"
+});
+
+// hero image animations
+gsap.from(".img1", {
+    x: 90,
+    opacity: 0,
+    stagger: 0.1,
+    duration: 2,
+    delay: 0.3,
+    ease: "power3.out"
+});
+
+// second section  animations
+gsap.from(".s-text", {
+    y: 60,
+    opacity: 0,
+    duration: 2,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: "#features",
+        start: "top 80%",
+        scrub: true
+    }
+});
+gsap.from(".feature-box", {
+    y: 80,
+    opacity: 0,
+    scale: 0.9,
+    stagger: 0.2,
+    duration: 2,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: "#features",
+        start: "top 80%",
+        scrub: true
+    }
+});
+
+// third section  animations
+gsap.from(".t-text", {
+    y: 60,
+    opacity: 0,
+    duration: 2,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: "#pricing",
+        start: "top 80%",
+        scrub: true
+    }
+});
+
+gsap.from(".pricing-card", {
+    y: 80,
+    opacity: 0,
+    scale: 0.9,
+    stagger: 0.2,
+    duration: 2,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: "#pricing",
+        start: "top 80%",
+        scrub: true
+    }
+});
+
+// fourth section  animations
+gsap.from(".fo-text", {
+    y: 60,
+    opacity: 0,
+    duration: 2,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: "#contact",
+        start: "top 80%",
+        scrub: true
+    }
+});
+
+gsap.from(".s-p", {
+    y: 70,
+    opacity: 0,
+    duration: 2,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: "#contact",
+        start: "top 80%",
+        scrub: true
+    }
+})
+
+gsap.from(".contact-f", {
+    x: -80,
+    opacity: 0,
+    scale: 0.9,
+    stagger: 0.2,
+    duration: 2,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: "#contact",
+        start: "top 80%",
+        scrub: true
+    }
+});
+gsap.from(".contact-m", {
+    x: 80,
+    opacity: 0,
+    scale: 0.9,
+    stagger: 0.2,
+    duration: 2,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: "#contact",
+        start: "top 80%",
+        scrub: true
+    }
+});
+
+// fifth section  animations
+gsap.from(".footer-text", {
+    y: 60,
+    opacity: 0,
+    duration: 10,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: "footer",
+        start: "top 60%",
+        end: "top 40%%",
+        scrub: true,
+        markers: true
+    }
+});
+
 
 // boxes animation
 const box1 = document.querySelector(".box1");
@@ -7,8 +166,30 @@ const box4 = document.querySelector(".box4");
 const box5 = document.querySelector(".box5");
 const box6 = document.querySelector(".box6");
 
+// gsap.fromTo(box1,
+//     {
+//         opacity: 0.1,
+//         scale: 0.1
+//     },
+//     {
+
+//         scale: 1,
+//         opacity: 1,
+//         scrollTrigger: (box1, {
+//             trigger: box1,
+//             start: "top 90%",
+//             end: "top 50%",
+//             ease: "power2.out",
+//             opacity: 1,
+//             scrub: true,
+//             duration: 3,
+//             // markers: true
+//         })
+//     });
+
+
 box1.addEventListener("mouseover", () => {
-    gsap.to(box1, {
+    gsap.to([box1], {
         scale: 1.05,
         duration: 0.2,
         y: -2
