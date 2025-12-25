@@ -1,8 +1,8 @@
-gsap.registerPlugin(ScrollTrigger, SplitText);
+gsap.registerPlugin(ScrollTrigger);
 
 // hero text animations
 gsap.from(".f-text", {
-    y: -70,
+    y: -80,
     opacity: 0,
     stagger: 0.1,
     duration: 2,
@@ -46,33 +46,35 @@ gsap.from(".s-text", {
     scrollTrigger: {
         trigger: "#features",
         start: "top 80%",
-        scrub: true
+        toggleActions: "restart none none none"
     }
 });
 gsap.from(".feature-box", {
-    y: 80,
+    y: -80,
+    x: -80,
     opacity: 0,
     scale: 0.9,
-    stagger: 0.2,
+    stagger: 0.3,
     duration: 2,
+    delay: 0.3,
     ease: "power3.out",
     scrollTrigger: {
         trigger: "#features",
         start: "top 80%",
-        scrub: true
+        toggleActions: "restart none none none"
     }
 });
 
 // third section  animations
 gsap.from(".t-text", {
-    y: 60,
+    y: 80,
     opacity: 0,
     duration: 2,
     ease: "power3.out",
     scrollTrigger: {
         trigger: "#pricing",
         start: "top 80%",
-        scrub: true
+        toggleActions: "restart none none none"
     }
 });
 
@@ -80,55 +82,44 @@ gsap.from(".pricing-card", {
     y: 80,
     opacity: 0,
     scale: 0.9,
-    stagger: 0.2,
+    stagger: 0.3,
     duration: 2,
+    delay: 0.4,
     ease: "power3.out",
     scrollTrigger: {
         trigger: "#pricing",
         start: "top 80%",
-        scrub: true
+        toggleActions: "restart none none none"
     }
 });
 
 // fourth section  animations
 gsap.from(".fo-text", {
-    y: 60,
+    y: 80,
     opacity: 0,
     duration: 2,
     ease: "power3.out",
     scrollTrigger: {
         trigger: "#contact",
         start: "top 80%",
-        scrub: true
+        toggleActions: "restart none none none"
     }
 });
 
 gsap.from(".s-p", {
-    y: 70,
+    y: 80,
     opacity: 0,
     duration: 2,
+    delay: 0.5,
     ease: "power3.out",
     scrollTrigger: {
         trigger: "#contact",
         start: "top 80%",
-        scrub: true
+        toggleActions: "restart none none none"
     }
 })
 
 gsap.from(".contact-f", {
-    x: -80,
-    opacity: 0,
-    scale: 0.9,
-    stagger: 0.2,
-    duration: 2,
-    ease: "power3.out",
-    scrollTrigger: {
-        trigger: "#contact",
-        start: "top 80%",
-        scrub: true
-    }
-});
-gsap.from(".contact-m", {
     x: 80,
     opacity: 0,
     scale: 0.9,
@@ -138,7 +129,21 @@ gsap.from(".contact-m", {
     scrollTrigger: {
         trigger: "#contact",
         start: "top 80%",
-        scrub: true
+        toggleActions: "restart none none none"
+    }
+});
+gsap.from(".contact-m", {
+    x: 80,
+    opacity: 0,
+    scale: 0.9,
+    stagger: 0.2,
+    duration: 2,
+    delay: 0.5,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: "#contact",
+        start: "top 80%",
+        toggleActions: "restart none none none"
     }
 });
 
@@ -146,14 +151,13 @@ gsap.from(".contact-m", {
 gsap.from(".footer-text", {
     y: 60,
     opacity: 0,
-    duration: 10,
+    duration: 2,
     ease: "power3.out",
     scrollTrigger: {
-        trigger: "footer",
+        trigger: "#footer",
         start: "top 60%",
         end: "top 40%%",
-        scrub: true,
-        markers: true
+        toggleActions: "restart none none none"
     }
 });
 
