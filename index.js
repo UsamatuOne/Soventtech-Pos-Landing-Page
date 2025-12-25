@@ -162,6 +162,9 @@ gsap.from(".footer-text", {
 });
 
 
+
+
+
 // boxes animation
 const box1 = document.querySelector(".box1");
 const box2 = document.querySelector(".box2");
