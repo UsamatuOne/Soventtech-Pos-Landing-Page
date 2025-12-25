@@ -50,8 +50,7 @@ gsap.from(".s-text", {
     }
 });
 gsap.from(".feature-box", {
-    y: -80,
-    x: -80,
+    y: 80,
     opacity: 0,
     scale: 0.9,
     stagger: 0.3,
@@ -152,6 +151,7 @@ gsap.from(".footer-text", {
     y: 60,
     opacity: 0,
     duration: 2,
+    stagger: 0.3,
     ease: "power3.out",
     scrollTrigger: {
         trigger: "#footer",
