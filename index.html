@@ -12,7 +12,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top py-3">
+    <nav class="navbar navbar-expand-lg py-3 fixed-top">
         <div class="container-xxl">
 
             <!-- Brand -->
@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
                 <ul class="navbar-nav gap-4">
                     <li class="nav-item">
-                        <a class="nav-link active fs-5" href="#home">Home</a>
+                        <a class="nav-link fs-5" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fs-5" href="#features">Features</a>
@@ -46,40 +46,32 @@
             </div>
 
             <!-- Mobile Offcanvas -->
-            <div class="offcanvas offcanvas-top d-lg-none" tabindex="-1" id="mobileMenu" style="height:auto;">
+            <div class="offcanvas offcanvas-top d-lg-none" tabindex="-1" id="mobileMenu" style="height:50vh;">
 
-                <!-- Header -->
                 <div class="offcanvas-header border-bottom">
-                    <!-- Title -->
-                    <h5 class="fw-bold mb-0">
+                    <h5 class="fw-bold">
                         <i class="fa-solid fa-money-bill-transfer me-2"></i>
                         Sovent-Tech-Pos
                     </h5>
-
-                    <!-- Close button (RIGHT – default Bootstrap) -->
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close">
-                    </button>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
                 </div>
 
-                <!-- Body -->
-                <div class="offcanvas-body pt-3">
-                    <ul class="navbar-nav text-start">
+                <div class="off-body d-flex justify-content-start align-items-center text-center ">
+                    <ul class="navbar-nav text-center">
                         <li class="nav-item mb-3">
-                            <a class="nav-link fs-4" href="#home" data-bs-dismiss="offcanvas">Home</a>
+                            <a class="nav-link fs-4" href="#home">Home</a>
                         </li>
                         <li class="nav-item mb-3">
-                            <a class="nav-link fs-4" href="#features" data-bs-dismiss="offcanvas">Features</a>
+                            <a class="nav-link fs-4" href="#features">Features</a>
                         </li>
                         <li class="nav-item mb-3">
-                            <a class="nav-link fs-4" href="#pricing" data-bs-dismiss="offcanvas">Pricing</a>
+                            <a class="nav-link fs-4" href="#pricing">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-4" href="#contact" data-bs-dismiss="offcanvas">Contact</a>
+                            <a class="nav-link fs-4" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
-
             </div>
 
         </div>
@@ -89,7 +81,7 @@
 
 
     <!-- hero section -->
-    <section class="py-5 my-5">
+    <section class="py-5 my-5" id="home">
         <div class="container-md text-center justify-content-center align-items-center">
             <div class="row text-center align-items-center">
                 <div class="col-md-6 align-items-center justify-content-center text-center">

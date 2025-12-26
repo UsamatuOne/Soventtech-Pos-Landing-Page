@@ -55,7 +55,8 @@ body {
 }
 
 /* ===== NAVBAR ===== */
-.offcanvas {
+.offcanvas,
+.off-body {
     background: rgba(2, 6, 23, 0.92);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
