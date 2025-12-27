@@ -20,6 +20,7 @@ body {
             transparent 40%),
         var(--bs-body-bg);
     color: var(--bs-body-color);
+    padding-top: 56px;
 }
 
 /* GLASS CARDS */
