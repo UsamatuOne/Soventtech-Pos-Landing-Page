@@ -20,7 +20,6 @@ body {
             transparent 40%),
         var(--bs-body-bg);
     color: var(--bs-body-color);
-    padding-top: 56px;
 }
 
 /* GLASS CARDS */
@@ -67,6 +66,20 @@ body {
     background: rgba(2, 6, 23, 0.78);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.navbar-logo {
+    width: 250px;
+    height: 50px;
+    background-image: url(./img/logo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navbar-brand,
