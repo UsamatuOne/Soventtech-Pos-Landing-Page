@@ -11,6 +11,9 @@
 }
 
 /* GLOBAL DARK BACKGROUND */
+html {
+    overflow-x: hidden;
+}
 
 body {
     background: radial-gradient(800px circle at top right,
