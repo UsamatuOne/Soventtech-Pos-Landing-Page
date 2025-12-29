@@ -11,6 +11,7 @@
 }
 
 /* GLOBAL DARK BACKGROUND */
+
 body {
     background: radial-gradient(800px circle at top right,
             rgba(56, 189, 248, 0.12),
@@ -20,6 +21,7 @@ body {
             transparent 40%),
         var(--bs-body-bg);
     color: var(--bs-body-color);
+    overflow-x: hidden;
 }
 
 /* GLASS CARDS */
