@@ -12,7 +12,7 @@
 
 /* GLOBAL DARK BACKGROUND */
 html {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 body {
@@ -25,6 +25,10 @@ body {
         var(--bs-body-bg);
     color: var(--bs-body-color);
     overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 70px;
+    overscroll-behavior: none;
+    height: 100vh;
 }
 
 /* GLASS CARDS */
