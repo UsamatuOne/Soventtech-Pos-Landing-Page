@@ -93,132 +93,132 @@ window.addEventListener("load", () => {
             }
         });
 
-    // third section  animations
-    gsap.fromTo(".t-text", {
-        y: 80,
-        opacity: 0,
-    },
-        {
-            y: 0,
-            opacity: 1,
-            duration: 2,
-            scrollTrigger: {
-                trigger: "#pricing",
-                ease: "power3.out",
-                start: "top 80%",
-                toggleActions: "play none none none"
-            }
-        });
+    // // third section  animations
+    // gsap.fromTo(".t-text", {
+    //     y: 80,
+    //     opacity: 0,
+    // },
+    //     {
+    //         y: 0,
+    //         opacity: 1,
+    //         duration: 2,
+    //         scrollTrigger: {
+    //             trigger: "#pricing",
+    //             ease: "power3.out",
+    //             start: "top 80%",
+    //             toggleActions: "play none none none"
+    //         }
+    //     });
 
-    gsap.fromTo(".pricing-card", {
-        y: 90,
-        opacity: 0,
-        scale: 0.5
-    },
-        {
-            y: 0,
-            opacity: 1,
-            scale: 1,
-            stagger: 0.3,
-            duration: 2,
-            delay: 0.4,
-            scrollTrigger: {
-                trigger: "#pricing",
-                ease: "power3.out",
-                start: "top 80%",
-                toggleActions: "play none none none"
-            }
-        });
+    // gsap.fromTo(".pricing-card", {
+    //     y: 90,
+    //     opacity: 0,
+    //     scale: 0.5
+    // },
+    //     {
+    //         y: 0,
+    //         opacity: 1,
+    //         scale: 1,
+    //         stagger: 0.3,
+    //         duration: 2,
+    //         delay: 0.4,
+    //         scrollTrigger: {
+    //             trigger: "#pricing",
+    //             ease: "power3.out",
+    //             start: "top 80%",
+    //             toggleActions: "play none none none"
+    //         }
+    //     });
 
-    // fourth section  animations
-    gsap.fromTo(".fo-text", {
-        y: 80,
-        opacity: 0,
-    },
-        {
-            y: 0,
-            opacity: 1,
-            duration: 2,
-            scrollTrigger: {
-                trigger: "#contact",
-                ease: "power3.out",
-                start: "top 80%",
-                toggleActions: "play none none none"
-            }
-        });
+    // // fourth section  animations
+    // gsap.fromTo(".fo-text", {
+    //     y: 80,
+    //     opacity: 0,
+    // },
+    //     {
+    //         y: 0,
+    //         opacity: 1,
+    //         duration: 2,
+    //         scrollTrigger: {
+    //             trigger: "#contact",
+    //             ease: "power3.out",
+    //             start: "top 80%",
+    //             toggleActions: "play none none none"
+    //         }
+    //     });
 
-    gsap.fromTo(".s-p", {
-        y: 80,
-        opacity: 0,
-    },
-        {
-            y: 0,
-            opacity: 1,
-            duration: 2,
-            delay: 0.5,
-            scrollTrigger: {
-                trigger: "#contact",
-                ease: "power3.out",
-                start: "top 80%",
-                toggleActions: "play none none none"
-            }
-        })
+    // gsap.fromTo(".s-p", {
+    //     y: 80,
+    //     opacity: 0,
+    // },
+    //     {
+    //         y: 0,
+    //         opacity: 1,
+    //         duration: 2,
+    //         delay: 0.5,
+    //         scrollTrigger: {
+    //             trigger: "#contact",
+    //             ease: "power3.out",
+    //             start: "top 80%",
+    //             toggleActions: "play none none none"
+    //         }
+    //     })
 
-    gsap.fromTo(".contact-f", {
-        y: 80,
-        opacity: 0,
-        scale: 0.9
-    },
-        {
-            y: 0,
-            opacity: 1,
-            stagger: 0.2,
-            scale: 1,
-            duration: 2,
-            scrollTrigger: {
-                trigger: "#contact",
-                ease: "power3.out",
-                start: "top 80%",
-                toggleActions: "play none none none"
-            }
-        });
-    gsap.fromTo(".contact-m", {
-        y: 80,
-        opacity: 0,
-    },
-        {
-            y: 0,
-            opacity: 1,
-            scale: 0.9,
-            stagger: 0.2,
-            duration: 2,
-            delay: 0.5,
-            scrollTrigger: {
-                trigger: "#contact",
-                ease: "power3.out",
-                start: "top 80%",
-                toggleActions: "play none none none"
-            }
-        });
+    // gsap.fromTo(".contact-f", {
+    //     y: 80,
+    //     opacity: 0,
+    //     scale: 0.9
+    // },
+    //     {
+    //         y: 0,
+    //         opacity: 1,
+    //         stagger: 0.2,
+    //         scale: 1,
+    //         duration: 2,
+    //         scrollTrigger: {
+    //             trigger: "#contact",
+    //             ease: "power3.out",
+    //             start: "top 80%",
+    //             toggleActions: "play none none none"
+    //         }
+    //     });
+    // gsap.fromTo(".contact-m", {
+    //     y: 80,
+    //     opacity: 0,
+    // },
+    //     {
+    //         y: 0,
+    //         opacity: 1,
+    //         scale: 0.9,
+    //         stagger: 0.2,
+    //         duration: 2,
+    //         delay: 0.5,
+    //         scrollTrigger: {
+    //             trigger: "#contact",
+    //             ease: "power3.out",
+    //             start: "top 80%",
+    //             toggleActions: "play none none none"
+    //         }
+    //     });
 
-    // fifth section  animations
-    gsap.fromTo(".footer-text", {
-        y: 60,
-        opacity: 0,
-    },
-        {
-            y: 0,
-            opacity: 1,
-            duration: 2,
-            stagger: 0.3,
-            scrollTrigger: {
-                trigger: "#footer",
-                ease: "power3.out",
-                start: "top 60%",
-                end: "top 40%",
-                toggleActions: "play none none none"
-            }
-        });
+    // // fifth section  animations
+    // gsap.fromTo(".footer-text", {
+    //     y: 60,
+    //     opacity: 0,
+    // },
+    //     {
+    //         y: 0,
+    //         opacity: 1,
+    //         duration: 2,
+    //         stagger: 0.3,
+    //         scrollTrigger: {
+    //             ease: "power3.out",
+    //             trigger: "#footer",
+    //             start: "top 60%",
+    //             end: "top 40%",
+    //             toggleActions: "play none none none"
+    //         }
+    //     });
 
 
 
