@@ -66,7 +66,7 @@ gsap.fromTo(".s-text", {
     {
         y: 0,
         opacity: 1,
-        duration: 1,
+        duration: 2,
         ease: "power3.out",
         scrollTrigger: {
             trigger: "#features",
@@ -84,7 +84,7 @@ gsap.fromTo(".feature-box", {
         opacity: 1,
         scale: 1,
         stagger: 0.3,
-        duration: 0.5,
+        duration: 2,
         delay: 0.3,
         ease: "power3.out",
         scrollTrigger: {
