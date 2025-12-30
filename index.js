@@ -70,8 +70,9 @@ gsap.fromTo(".s-text", {
         ease: "power3.out",
         scrollTrigger: {
             trigger: "#features",
-            start: "top 80%",
-            toggleActions: "restart none none none"
+            start: "top 100%",
+            toggleActions: "play none none none",
+            markers: true
         }
     });
 gsap.fromTo(".feature-box", {
@@ -90,7 +91,7 @@ gsap.fromTo(".feature-box", {
         scrollTrigger: {
             trigger: "#features",
             start: "top 80%",
-            toggleActions: "restart none none none"
+            toggleActions: "play none none none"
         }
     });
 
@@ -107,7 +108,7 @@ gsap.fromTo(".t-text", {
         scrollTrigger: {
             trigger: "#pricing",
             start: "top 80%",
-            toggleActions: "restart none none none"
+            toggleActions: "play none none none"
         }
     });
 
@@ -127,7 +128,7 @@ gsap.fromTo(".pricing-card", {
         scrollTrigger: {
             trigger: "#pricing",
             start: "top 80%",
-            toggleActions: "restart none none none"
+            toggleActions: "play none none none"
         }
     });
 
@@ -144,7 +145,7 @@ gsap.fromTo(".fo-text", {
         scrollTrigger: {
             trigger: "#contact",
             start: "top 80%",
-            toggleActions: "restart none none none"
+            toggleActions: "play none none none"
         }
     });
 
@@ -161,7 +162,7 @@ gsap.fromTo(".s-p", {
         scrollTrigger: {
             trigger: "#contact",
             start: "top 80%",
-            toggleActions: "restart none none none"
+            toggleActions: "play none none none"
         }
     })
 
@@ -180,7 +181,7 @@ gsap.fromTo(".contact-f", {
         scrollTrigger: {
             trigger: "#contact",
             start: "top 80%",
-            toggleActions: "restart none none none"
+            toggleActions: "play none none none"
         }
     });
 gsap.fromTo(".contact-m", {
@@ -198,7 +199,7 @@ gsap.fromTo(".contact-m", {
         scrollTrigger: {
             trigger: "#contact",
             start: "top 80%",
-            toggleActions: "restart none none none"
+            toggleActions: "play none none none"
         }
     });
 
@@ -217,7 +218,7 @@ gsap.fromTo(".footer-text", {
             trigger: "#footer",
             start: "top 60%",
             end: "top 40%",
-            toggleActions: "restart none none none"
+            toggleActions: "play none none none"
         }
     });
 
