@@ -52,7 +52,6 @@ window.addEventListener("load", () => {
         {
             y: 0,
             opacity: 1,
-            stagger: 0.1,
             duration: 2,
             delay: 0.3,
             ease: "power3.out"
@@ -67,9 +66,9 @@ window.addEventListener("load", () => {
             y: 0,
             opacity: 1,
             duration: 2,
-            ease: "power3.out",
             scrollTrigger: {
                 trigger: "#features",
+                ease: "power3.out",
                 start: "top 80%",
                 toggleActions: "play none none none"
             }
@@ -86,9 +85,9 @@ window.addEventListener("load", () => {
             stagger: 0.3,
             duration: 2,
             delay: 0.3,
-            ease: "power3.out",
             scrollTrigger: {
                 trigger: "#features",
+                ease: "power3.out",
                 start: "top 80%",
                 toggleActions: "play none none none"
             }
@@ -103,9 +102,9 @@ window.addEventListener("load", () => {
             y: 0,
             opacity: 1,
             duration: 2,
-            ease: "power3.out",
             scrollTrigger: {
                 trigger: "#pricing",
+                ease: "power3.out",
                 start: "top 80%",
                 toggleActions: "play none none none"
             }
@@ -123,9 +122,9 @@ window.addEventListener("load", () => {
             stagger: 0.3,
             duration: 2,
             delay: 0.4,
-            ease: "power3.out",
             scrollTrigger: {
                 trigger: "#pricing",
+                ease: "power3.out",
                 start: "top 80%",
                 toggleActions: "play none none none"
             }
@@ -140,9 +139,9 @@ window.addEventListener("load", () => {
             y: 0,
             opacity: 1,
             duration: 2,
-            ease: "power3.out",
             scrollTrigger: {
                 trigger: "#contact",
+                ease: "power3.out",
                 start: "top 80%",
                 toggleActions: "play none none none"
             }
@@ -157,9 +156,9 @@ window.addEventListener("load", () => {
             opacity: 1,
             duration: 2,
             delay: 0.5,
-            ease: "power3.out",
             scrollTrigger: {
                 trigger: "#contact",
+                ease: "power3.out",
                 start: "top 80%",
                 toggleActions: "play none none none"
             }
@@ -176,9 +175,9 @@ window.addEventListener("load", () => {
             stagger: 0.2,
             scale: 1,
             duration: 2,
-            ease: "power3.out",
             scrollTrigger: {
                 trigger: "#contact",
+                ease: "power3.out",
                 start: "top 80%",
                 toggleActions: "play none none none"
             }
@@ -194,9 +193,9 @@ window.addEventListener("load", () => {
             stagger: 0.2,
             duration: 2,
             delay: 0.5,
-            ease: "power3.out",
             scrollTrigger: {
                 trigger: "#contact",
+                ease: "power3.out",
                 start: "top 80%",
                 toggleActions: "play none none none"
             }
@@ -212,9 +211,9 @@ window.addEventListener("load", () => {
             opacity: 1,
             duration: 2,
             stagger: 0.3,
-            ease: "power3.out",
             scrollTrigger: {
                 trigger: "#footer",
+                ease: "power3.out",
                 start: "top 60%",
                 end: "top 40%",
                 toggleActions: "play none none none"
