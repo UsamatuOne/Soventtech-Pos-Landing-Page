@@ -73,25 +73,20 @@ window.addEventListener("load", () => {
                 toggleActions: "play none none none"
             }
         });
-    gsap.fromTo(".feature-box", {
+    gsap.from(".feature-box", {
         y: 90,
         opacity: 0,
-        scale: 0.7
-    },
-        {
-            y: 0,
-            opacity: 1,
-            scale: 1,
-            stagger: 0.3,
-            duration: 2,
-            delay: 0.3,
-            scrollTrigger: {
-                trigger: "#features",
-                ease: "power3.out",
-                start: "top 80%",
-                toggleActions: "play none none none"
-            }
-        });
+        scale: 0.5,
+        stagger: 0.3,
+        duration: 0.9,
+        delay: 0.3,
+        scrollTrigger: {
+            trigger: "#features",
+            ease: "power3.out",
+            start: "top 80%",
+            toggleActions: "play none none none"
+        }
+    });
 
     // // third section  animations
     // gsap.fromTo(".t-text", {
