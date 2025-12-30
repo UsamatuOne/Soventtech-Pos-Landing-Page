@@ -5,165 +5,221 @@
 gsap.registerPlugin(ScrollTrigger);
 
 // hero text animations
-gsap.from(".f-text", {
+gsap.fromTo(".f-text", {
     y: -80,
     opacity: 0,
-    stagger: 0.1,
-    duration: 2,
-    delay: 0.80,
-    ease: "power3.out"
-});
+},
+    {
+        y: 0,
+        opacity: 1,
+        stagger: 0.1,
+        duration: 1,
+        delay: 0.5,
+        ease: "power3.out"
+    });
 
-gsap.from(".f-p", {
-    y: 70,
+gsap.fromTo(".f-p", {
+    y: 80,
     opacity: 0,
-    stagger: 0.1,
-    duration: 2,
-    delay: 0.90,
-    ease: "power3.out"
-});
-gsap.from(".f-b", {
-    y: 70,
+},
+    {
+        y: 0,
+        opacity: 1,
+        stagger: 0.1,
+        duration: 1,
+        delay: 0.3,
+        ease: "power3.out"
+    });
+
+gsap.fromTo(".f-b", {
+    y: 80,
     opacity: 0,
-    stagger: 0.1,
-    duration: 2,
-    delay: 1.2,
-    ease: "power3.out"
-});
+},
+    {
+        y: 0,
+        opacity: 1,
+        stagger: 0.1,
+        duration: 2,
+        delay: 0.3,
+        ease: "power3.out"
+    });
 
 // hero image animations
-gsap.from(".img1", {
-    x: 90,
+gsap.fromTo(".img1", {
+    y: 90,
     opacity: 0,
-    stagger: 0.1,
-    duration: 2,
-    delay: 0.3,
-    ease: "power3.out"
-});
+},
+    {
+        y: 0,
+        opacity: 1,
+        stagger: 0.1,
+        duration: 2,
+        delay: 0.3,
+        ease: "power3.out"
+    });
 
 // second section  animations
-gsap.from(".s-text", {
+gsap.fromTo(".s-text", {
     y: 60,
     opacity: 0,
-    duration: 2,
-    ease: "power3.out",
-    scrollTrigger: {
-        trigger: "#features",
-        start: "top 80%",
-        toggleActions: "restart none none none"
-    }
-});
-gsap.from(".feature-box", {
-    y: 80,
+},
+    {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+            trigger: "#features",
+            start: "top 80%",
+            toggleActions: "restart none none none"
+        }
+    });
+gsap.fromTo(".feature-box", {
+    y: 90,
     opacity: 0,
-    scale: 0.9,
-    stagger: 0.3,
-    duration: 2,
-    delay: 0.3,
-    ease: "power3.out",
-    scrollTrigger: {
-        trigger: "#features",
-        start: "top 80%",
-        toggleActions: "restart none none none"
-    }
-});
+    scale: 0.7
+},
+    {
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        stagger: 0.3,
+        duration: 0.5,
+        delay: 0.3,
+        ease: "power3.out",
+        scrollTrigger: {
+            trigger: "#features",
+            start: "top 80%",
+            toggleActions: "restart none none none"
+        }
+    });
 
 // third section  animations
-gsap.from(".t-text", {
+gsap.fromTo(".t-text", {
     y: 80,
     opacity: 0,
-    duration: 2,
-    ease: "power3.out",
-    scrollTrigger: {
-        trigger: "#pricing",
-        start: "top 80%",
-        toggleActions: "restart none none none"
-    }
-});
+},
+    {
+        y: 0,
+        opacity: 1,
+        duration: 2,
+        ease: "power3.out",
+        scrollTrigger: {
+            trigger: "#pricing",
+            start: "top 80%",
+            toggleActions: "restart none none none"
+        }
+    });
 
-gsap.from(".pricing-card", {
-    y: 80,
+gsap.fromTo(".pricing-card", {
+    y: 90,
     opacity: 0,
-    scale: 0.9,
-    stagger: 0.3,
-    duration: 2,
-    delay: 0.4,
-    ease: "power3.out",
-    scrollTrigger: {
-        trigger: "#pricing",
-        start: "top 80%",
-        toggleActions: "restart none none none"
-    }
-});
+    scale: 0.5
+},
+    {
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        stagger: 0.3,
+        duration: 2,
+        delay: 0.4,
+        ease: "power3.out",
+        scrollTrigger: {
+            trigger: "#pricing",
+            start: "top 80%",
+            toggleActions: "restart none none none"
+        }
+    });
 
 // fourth section  animations
-gsap.from(".fo-text", {
+gsap.fromTo(".fo-text", {
     y: 80,
     opacity: 0,
-    duration: 2,
-    ease: "power3.out",
-    scrollTrigger: {
-        trigger: "#contact",
-        start: "top 80%",
-        toggleActions: "restart none none none"
-    }
-});
+},
+    {
+        y: 0,
+        opacity: 1,
+        duration: 2,
+        ease: "power3.out",
+        scrollTrigger: {
+            trigger: "#contact",
+            start: "top 80%",
+            toggleActions: "restart none none none"
+        }
+    });
 
-gsap.from(".s-p", {
+gsap.fromTo(".s-p", {
     y: 80,
     opacity: 0,
-    duration: 2,
-    delay: 0.5,
-    ease: "power3.out",
-    scrollTrigger: {
-        trigger: "#contact",
-        start: "top 80%",
-        toggleActions: "restart none none none"
-    }
-})
+},
+    {
+        y: 0,
+        opacity: 1,
+        duration: 2,
+        delay: 0.5,
+        ease: "power3.out",
+        scrollTrigger: {
+            trigger: "#contact",
+            start: "top 80%",
+            toggleActions: "restart none none none"
+        }
+    })
 
-gsap.from(".contact-f", {
-    x: 80,
+gsap.fromTo(".contact-f", {
+    y: 80,
     opacity: 0,
-    scale: 0.9,
-    stagger: 0.2,
-    duration: 2,
-    ease: "power3.out",
-    scrollTrigger: {
-        trigger: "#contact",
-        start: "top 80%",
-        toggleActions: "restart none none none"
-    }
-});
-gsap.from(".contact-m", {
-    x: 80,
+    scale: 0.9
+},
+    {
+        y: 0,
+        opacity: 1,
+        stagger: 0.2,
+        scale: 1,
+        duration: 2,
+        ease: "power3.out",
+        scrollTrigger: {
+            trigger: "#contact",
+            start: "top 80%",
+            toggleActions: "restart none none none"
+        }
+    });
+gsap.fromTo(".contact-m", {
+    y: 80,
     opacity: 0,
-    scale: 0.9,
-    stagger: 0.2,
-    duration: 2,
-    delay: 0.5,
-    ease: "power3.out",
-    scrollTrigger: {
-        trigger: "#contact",
-        start: "top 80%",
-        toggleActions: "restart none none none"
-    }
-});
+},
+    {
+        y: 0,
+        opacity: 1,
+        scale: 0.9,
+        stagger: 0.2,
+        duration: 2,
+        delay: 0.5,
+        ease: "power3.out",
+        scrollTrigger: {
+            trigger: "#contact",
+            start: "top 80%",
+            toggleActions: "restart none none none"
+        }
+    });
 
 // fifth section  animations
-gsap.from(".footer-text", {
+gsap.fromTo(".footer-text", {
     y: 60,
     opacity: 0,
-    duration: 2,
-    stagger: 0.3,
-    ease: "power3.out",
-    scrollTrigger: {
-        trigger: "#footer",
-        start: "top 60%",
-        end: "top 40%",
-        toggleActions: "restart none none none"
-    }
-});
+},
+    {
+        y: 0,
+        opacity: 1,
+        duration: 2,
+        stagger: 0.3,
+        ease: "power3.out",
+        scrollTrigger: {
+            trigger: "#footer",
+            start: "top 60%",
+            end: "top 40%",
+            toggleActions: "restart none none none"
+        }
+    });
 
 
 
