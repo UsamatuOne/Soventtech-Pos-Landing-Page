@@ -1,8 +1,8 @@
 
 
 
+gsap.registerPlugin(ScrollTrigger);
 window.addEventListener("load", () => {
-    gsap.registerPlugin(ScrollTrigger);
 
     // hero text animations
     gsap.fromTo(".f-text", {
