@@ -4,58 +4,58 @@
 gsap.registerPlugin(ScrollTrigger);
 window.addEventListener("load", () => {
 
-    // // hero text animations
-    // gsap.fromTo(".f-text", {
-    //     y: -80,
-    //     opacity: 0,
-    // },
-    //     {
-    //         y: 0,
-    //         opacity: 1,
-    //         stagger: 0.1,
-    //         duration: 1,
-    //         delay: 0.5,
-    //         ease: "power3.out"
-    //     });
+    // hero text animations
+    gsap.fromTo(".f-text", {
+        y: -80,
+        opacity: 0,
+    },
+        {
+            y: 0,
+            opacity: 1,
+            stagger: 0.1,
+            duration: 1,
+            delay: 0.5,
+            ease: "power3.out"
+        });
 
-    // gsap.fromTo(".f-p", {
-    //     y: 80,
-    //     opacity: 0,
-    // },
-    //     {
-    //         y: 0,
-    //         opacity: 1,
-    //         stagger: 0.1,
-    //         duration: 1,
-    //         delay: 0.3,
-    //         ease: "power3.out"
-    //     });
+    gsap.fromTo(".f-p", {
+        y: 80,
+        opacity: 0,
+    },
+        {
+            y: 0,
+            opacity: 1,
+            stagger: 0.1,
+            duration: 1,
+            delay: 0.3,
+            ease: "power3.out"
+        });
 
-    // gsap.fromTo(".f-b", {
-    //     y: 80,
-    //     opacity: 0,
-    // },
-    //     {
-    //         y: 0,
-    //         opacity: 1,
-    //         stagger: 0.1,
-    //         duration: 2,
-    //         delay: 0.3,
-    //         ease: "power3.out"
-    //     });
+    gsap.fromTo(".f-b", {
+        y: 80,
+        opacity: 0,
+    },
+        {
+            y: 0,
+            opacity: 1,
+            stagger: 0.1,
+            duration: 2,
+            delay: 0.3,
+            ease: "power3.out"
+        });
 
-    // // hero image animations
-    // gsap.fromTo(".img1", {
-    //     y: 90,
-    //     opacity: 0,
-    // },
-    //     {
-    //         y: 0,
-    //         opacity: 1,
-    //         duration: 2,
-    //         delay: 0.3,
-    //         ease: "power3.out"
-    //     });
+    // hero image animations
+    gsap.fromTo(".img1", {
+        y: 90,
+        opacity: 0,
+    },
+        {
+            y: 0,
+            opacity: 1,
+            duration: 2,
+            delay: 0.3,
+            ease: "power3.out"
+        });
 
     // // second section  animations
     // gsap.fromTo(".s-text", {
