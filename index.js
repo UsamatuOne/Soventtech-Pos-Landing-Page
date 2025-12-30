@@ -74,7 +74,7 @@ window.addEventListener("load", () => {
             }
         });
     gsap.from(".feature-box", {
-        y: 90,
+        y: 70,
         opacity: 0,
         scale: 0.5,
         stagger: 0.3,
